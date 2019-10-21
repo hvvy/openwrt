@@ -38,8 +38,10 @@ make menuconfig
 开始下载编译
 
 ``` bash
-make download V=s && make -jn V=s
+make download V=s -jn && make -jn V=s
 ```
+
+`-jn`中的`n`=CPU线程数+1 例如CPU是双核四线程的话那就是`-j5` 全速下载、编译
 
 ---
 
